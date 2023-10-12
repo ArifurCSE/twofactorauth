@@ -266,9 +266,23 @@ namespace TwoFAAPI.Implementations
             }
         }
 
-        public Task<bool> IsUser2faAuthEnable(UserModel user)
+        public async Task<bool> IsUser2faAuthEnable(UserModel user)
         {
-            throw new NotImplementedException();
+            //try
+            //{
+            //    var userData = await _dbContext.HrEmp.Where(p => p.EmpId == user.EmpId).FirstOrDefaultAsync();
+
+            //    if (userData != null) { 
+            //        return userData.Is2faenable;
+            //    }
+            //}
+            //catch (Exception)
+            //{
+
+            //    throw;
+            //}
+
+            return false;
         }
     }
 }
