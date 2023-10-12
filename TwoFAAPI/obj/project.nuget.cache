@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XetBNZ8xbC03N2RHdZ7I2YRaTsryyYRLUq12GctMjBWPrc3EYNoPVqDlZ8/EQp/nAbHMK2TtgOmanxvcyH8M7A==",
+  "dgSpecHash": "Zd7SDPrqPja8UuW/W0MZmgiMqSzInSJhvrTI8QGPHJRFYMw2U87uoTrEbl1S2oubJRlTtiD8uiDMsOkGVKW5qw==",
   "success": true,
-  "projectFilePath": "D:\\DotNet\\TwoFAApp\\TwoFAAPI\\TwoFAAPI.csproj",
+  "projectFilePath": "D:\\DotNet\\TwoFAApp\\twofactorauth\\TwoFAAPI\\TwoFAAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arifur\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Arifur\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

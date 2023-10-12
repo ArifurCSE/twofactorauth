@@ -6133,11 +6133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNet\\TwoFAApp\\TwoFAAPI\\TwoFAAPI.csproj",
+      "projectUniqueName": "D:\\DotNet\\TwoFAApp\\twofactorauth\\TwoFAAPI\\TwoFAAPI.csproj",
       "projectName": "TwoFAAPI",
-      "projectPath": "D:\\DotNet\\TwoFAApp\\TwoFAAPI\\TwoFAAPI.csproj",
+      "projectPath": "D:\\DotNet\\TwoFAApp\\twofactorauth\\TwoFAAPI\\TwoFAAPI.csproj",
       "packagesPath": "C:\\Users\\Arifur\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNet\\TwoFAApp\\TwoFAAPI\\obj\\",
+      "outputPath": "D:\\DotNet\\TwoFAApp\\twofactorauth\\TwoFAAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Arifur\\AppData\\Roaming\\NuGet\\NuGet.Config",
