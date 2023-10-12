@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TwoFAAPI.Data;
 using TwoFAAPI.Interface;
 using TwoFAAPI.Utility;
@@ -9,8 +10,7 @@ namespace TwoFAAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
-    public class AuthController : ControllerBase
+       public class AuthController : ControllerBase
     {
         private readonly FADBContext _dbContext;
         private readonly IAuthRepository _authRepository;
@@ -162,10 +162,31 @@ namespace TwoFAAPI.Controllers
         #endregion
         [AllowAnonymous]
         [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromBody] UserModel userLogin)
+        public async Task<IActionResult> Login([FromBody] LoginModel userLogin)
         {
+            try
+            {
+                if (userLogin is not null)
+                {
+                    HrEmp hrEmp = new HrEmp();
+                    hrEmp = await _dbContext.HrEmp.Where(e => e.Email == userLogin.Email).FirstOrDefaultAsync();
+                    if (hrEmp is null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(new CommonResponse(hrEmp, "Success"));
 
-            return NotFound();
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message.ToString());
+            }
 
         }
 

@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.EntityFrameworkCore;
 using TwoFAAPI.Data;
+using TwoFAAPI.Implementations;
+using TwoFAAPI.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<FADBContext>(options => options.UseNpgsql(builder.Configuration.GetSection("ConnectionStrings:LocalPgConnection").Value));
+builder.Services.AddTransient<IAuthRepository, AuthRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
