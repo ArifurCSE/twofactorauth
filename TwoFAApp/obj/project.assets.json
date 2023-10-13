@@ -2241,19 +2241,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Arifur\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNet\\TwoFAApp\\twofactorauth\\TwoFAApp\\TwoFAApp.csproj",
+      "projectUniqueName": "F:\\Office\\twofactorauth\\TwoFAApp\\TwoFAApp.csproj",
       "projectName": "TwoFAApp",
-      "projectPath": "D:\\DotNet\\TwoFAApp\\twofactorauth\\TwoFAApp\\TwoFAApp.csproj",
-      "packagesPath": "C:\\Users\\Arifur\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNet\\TwoFAApp\\twofactorauth\\TwoFAApp\\obj\\",
+      "projectPath": "F:\\Office\\twofactorauth\\TwoFAApp\\TwoFAApp.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "F:\\Office\\twofactorauth\\TwoFAApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Arifur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2319,7 +2319,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

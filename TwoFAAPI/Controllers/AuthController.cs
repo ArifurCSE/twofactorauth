@@ -190,6 +190,27 @@ namespace TwoFAAPI.Controllers
 
         }
 
+
+        [HttpGet]
+        [Route("getUserProfile/{empId}")]
+        public async Task<IActionResult> GetUserProfile(int empId)
+        {
+            try
+            {
+                var userProfile = await _authRepository.GetUserProfile(empId);
+
+
+
+                return Ok(userProfile);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
         [AllowAnonymous]
         [HttpPost("Register")]
         public async Task<IActionResult> Register([FromBody] UserModel userLogin)

@@ -284,5 +284,29 @@ namespace TwoFAAPI.Implementations
 
             return false;
         }
+
+        public async Task<HrEmpprofile> GetUserProfile(int empId)
+        {
+            try
+            {
+                HrEmpprofile hrEmpprofile = new HrEmpprofile();
+                HrEmp emp = new HrEmp();
+                hrEmpprofile.EmpId = empId;
+                emp = await _dbContext.HrEmp.Where(e => e.EmpId == empId).FirstOrDefaultAsync();
+                hrEmpprofile.Emp = new UserModel()
+                {
+                    EmpId =  empId,
+                    FullName = emp.FullName,
+                    Email = emp.Email
+
+                };
+                return hrEmpprofile;    
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

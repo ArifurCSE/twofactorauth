@@ -12,5 +12,6 @@ namespace TwoFAAPI.Interface
         Task<List<TwoFABackupCode>> Get2faAuthBackupCodes(UserModel user);
         Task<bool> User2faAuthBackupCodesVerify(UserModel user);
         Task<bool> User2faAuthDisable(int empId);
+        Task<HrEmpprofile> GetUserProfile(int empId);
     }
 }

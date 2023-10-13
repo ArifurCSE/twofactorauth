@@ -15,4 +15,9 @@
         public string BackupCode { get; set; }
 
     }
+    public class HrEmpprofile
+    {
+        public UserModel Emp { get; set; }
+        public int EmpId { get; set; }
+    }
 }
